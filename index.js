@@ -6,6 +6,15 @@ dotenv.config();
 
 const app = express();
 
+//importing routes
+import userRoutes from "./routes/user.js";
+
+//using routes
+app.use("/api", userRoutes);
+
+
+
+
 const port = process.env.PORT || 3535;
 
 
